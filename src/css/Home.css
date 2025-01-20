@@ -1,0 +1,165 @@
+/* 홈 페이지 스타일 */
+body {
+  margin: 0;
+  font-family: "BebasNeue";
+  background-color: #121212;
+  color: #fff;
+  letter-spacing: 2px;
+}
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: normal;
+  src: url("../fonts/BebasNeue.otf") format("truetype");
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+  padding-left: 20px;
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header a {
+  text-decoration-line: none;
+}
+
+.header h1 {
+  text-decoration-line: none;
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: #e50914;
+  margin: 0;
+}
+
+.body {
+  justify-content: center;
+  justify-items: center;
+}
+
+.movie_box {
+  padding: 20px;
+}
+
+.movie_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개의 영화 */
+  gap: 20px; /* 영화 간의 간격 */
+  margin-top: 20px;
+}
+
+.movie {
+  background-color: #b20710;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px #b20710;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.movie:hover {
+  transform: scale(1.35);
+  box-shadow: 0 6px 15px #b20710;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.movie_img:hover img {
+  transform: scale(1.1);
+}
+
+.movie .info {
+  padding: 15px;
+  text-align: center;
+}
+
+.movie .info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #ff5555;
+}
+
+.movie .info p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+.movie_detail {
+  width: 400px;
+  justify-items: center;
+}
+
+.movie_detail_box {
+  max-width: 600px;
+  padding: 30px;
+  border: #fff 2px;
+  border-radius: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.movie_detail_box p {
+  font-size: 20px;
+}
+.movie_detail_genres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  font-weight: bolder;
+}
+
+.movie_detail_genres li {
+  list-style: none;
+  font-family: "SBAggroB";
+  font-size: 16px;
+  background-color: #b20710;
+  margin: 5px;
+  padding: 10px;
+  color: #000;
+  border-radius: 10px;
+}
+
+.movie_detail_img {
+  width: 300px;
+  border: 4px solid #e50914;
+  border-radius: 20px;
+}
+
+.movie_detail_img img {
+  width: 100%;
+  border-radius: 20px;
+  border-color: #fff;
+}
+
+.close {
+  position: absolute;
+  left: 30px;
+  top: 70px;
+}
+
+.close img {
+  width: 25px;
+}
+
+.loading {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  font-size: 100px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  color: #b20710;
+  letter-spacing: 5px;
+}
